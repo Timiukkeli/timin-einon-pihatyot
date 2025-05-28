@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timin ja Einon pihatyöt</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background-color: #2e8b57;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #2e8b57;
+      font-size: 1.8rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "✓";
+      color: #2e8b57;
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
+    footer {
+      background-color: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .contact-button {
+      display: block;
+      margin: 2rem auto;
+      padding: 12px 24px;
+      background-color: #2e8b57;
+      color: white;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .contact-link {
+      color: #2e8b57;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Timin ja Einon pihatyöt</h1>
+    <p>Luotettavaa pihatyöpalvelua jokaiseen vuodenaikaan</p>
+  </header>
+
+  <section>
+    <h2>Mitä me teemme</h2>
+    <p>
+      Tarjoamme kattavat pihatyöpalvelut koko vuoden ympäri. Oli kyseessä sitten kevätsiivous, nurmikon leikkuu tai talvinen lumenluonti, me hoidamme homman!
+    </p>
+    <ul>
+      <li>Nurmikon leikkaus ja trimmeröinti</li>
+      <li>Lehtien haravointi ja pihan siivous</li>
+      <li>Lumen luonti ja hiekoitus</li>
+      <li>Puiden ja pensaiden leikkaus</li>
+      <li>Istutustyöt ja mullan levitys</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Yhteystiedot</h2>
+    <p>📍 Toimimme alueella Äänekoski</p>
+    <p>
+      <a href="https://www.facebook.com/profile.php?id=61576783980470" target="_blank" rel="noopener" class="contact-link">
+        Facebook-sivumme
+      </a>
+    </p>
+  </section>
+
+  <button class="contact-button">Ota yhteyttä</button>
+
+  <footer>
+    &copy; 2025 Timin ja Einon pihatyöt
+  </footer>
+
+  <script>
+    // Tervetuloviesti kun sivu avataan
+    window.addEventListener("load", function () {
+      alert("Tervetuloa Timin ja Einon pihatyösivulle!");
+    });
+
+    // Kiitosviesti nappia painettaessa
+    const btn = document.querySelector(".contact-button");
+    btn.addEventListener("click", function () {
+      alert("Kiitos yhteydenotosta! Otamme sinuun pian yhteyttä.");
+    });
+  </script>
+
+</body>
+</html>
